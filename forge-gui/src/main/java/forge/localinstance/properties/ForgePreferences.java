@@ -174,6 +174,7 @@ public class ForgePreferences extends PreferencesStore<ForgePreferences.FPref> {
         UI_ENABLE_DISPOSE_TEXTURES("false"),
         UI_LOAD_UNKNOWN_CARDS("true"),
         UI_LOAD_NONLEGAL_CARDS("true"),
+        UI_LOAD_ONLINE_EDITIONS("true"),
         ALLOW_CUSTOM_CARDS_IN_DECKS_CONFORMANCE("false"),
         UI_AUTO_CACHE_SIZE("false"),
         UI_USE_LASER_ARROWS("true"),

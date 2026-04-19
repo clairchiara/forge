@@ -120,6 +120,7 @@ public enum VSubmenuPreferences implements IVSubmenu<CSubmenuPreferences> {
     private final JCheckBox cbCheckSnapshot = new OptionsCheckBox(localizer.getMessage("cbSnapshotUpdate"));
     private final JCheckBox cbEnableUnknownCards = new OptionsCheckBox(localizer.getMessage("lblEnableUnknownCards"));
     private final JCheckBox cbEnableNonLegalCards = new OptionsCheckBox(localizer.getMessage("lblEnableNonLegalCards"));
+    private final JCheckBox cbLoadOnlineEditions = new OptionsCheckBox(localizer.getMessage("lblLoadOnlineEditions"));
     private final JCheckBox cbAllowCustomCardsDeckConformance = new OptionsCheckBox(localizer.getMessage("lblAllowCustomCardsInDecks"));
     private final JCheckBox cbUseExperimentalNetworkStream = new OptionsCheckBox(localizer.getMessage("lblExperimentalNetworkCompatibility"));
     private final JCheckBox cbAiPicker = new OptionsCheckBox(localizer.getMessage("lblAiPickerSettings"));
@@ -376,6 +377,9 @@ public enum VSubmenuPreferences implements IVSubmenu<CSubmenuPreferences> {
 
         pnlPrefs.add(cbEnableNonLegalCards, titleConstraints);
         pnlPrefs.add(new NoteLabel(localizer.getMessage("nlEnableNonLegalCards")), descriptionConstraints);
+
+        pnlPrefs.add(cbLoadOnlineEditions, titleConstraints);
+        pnlPrefs.add(new NoteLabel(localizer.getMessage("nlLoadOnlineEditions")), descriptionConstraints);
 
         pnlPrefs.add(cbAllowCustomCardsDeckConformance, titleConstraints);
         pnlPrefs.add(new NoteLabel(localizer.getMessage("nlAllowCustomCardsInDecks")), descriptionConstraints);
@@ -736,6 +740,11 @@ public enum VSubmenuPreferences implements IVSubmenu<CSubmenuPreferences> {
     public JCheckBox getCbEnableNonLegalCards() {
         return cbEnableNonLegalCards;
     }
+
+    public JCheckBox getCbLoadOnlineEditions() {
+        return cbLoadOnlineEditions;
+    }
+
     /** @return {@link javax.swing.JCheckBox} */
     public JCheckBox getCbAllowCustomCardsDeckConformance() {
         return cbAllowCustomCardsDeckConformance;
